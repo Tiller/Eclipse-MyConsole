@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.views">
+      <view
+            allowMultiple="true"
+            category="org.eclipse.ui"
+            class="com.stooit.betterconsole.MyConsoleView"
+            icon="icons/console_view.png"
+            id="com.stooit.betterconsole.MyConsole"
+            name="MyConsole">
+      </view>
+   </extension>
+   <extension
+         point="org.eclipse.ui.console.consoleFactories">
+      <consoleFactory
+            class="com.stooit.betterconsole.MyConsoleViewConsoleFactory"
+            icon="icons/console_view.png"
+            label="New MyConsole View">
+      </consoleFactory>
+   </extension>
+
+</plugin>
